@@ -1,0 +1,18 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: WineStorage Addon
+version: "1.0.0"
+slug: winestorageapi
+description: WineStorage add-on
+url: "https://github.com/marchorst/WineStorageHomeAssistantRepository"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+map:
+  - share:rw
+ingress: true
+ingress_port: 8080
+#image: "ghcr.io/home-assistant/{arch}-addon-example"

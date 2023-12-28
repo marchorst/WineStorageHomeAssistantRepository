@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: WineStorage Addon
-version: "1.0.0"
+version: "1.0.1"
 slug: winestorageapi
 description: WineStorage add-on
 url: "https://github.com/marchorst/WineStorageHomeAssistantRepository"

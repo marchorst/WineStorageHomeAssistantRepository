@@ -11,7 +11,7 @@ arch:
   - amd64
   - i386
 init: false
-panel_icon: "mdi:bottle-wine",
+panel_icon: "mdi:bottle-wine"
 map:
   - share:rw
 ingress: true

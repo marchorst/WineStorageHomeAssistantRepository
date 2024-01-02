@@ -1,6 +1,6 @@
-# Home Assistant Add-on: WineStorage Addon
+# Home Assistant Add-on: WineStorage
 
-_WineStorage Addon_
+_WineStorage_
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]

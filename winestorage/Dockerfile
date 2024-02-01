@@ -41,4 +41,4 @@ RUN chmod +x /localshare/setup.sh
 EXPOSE 8080
 
 # Command to start the webserver
-CMD ["/bin/bash", "-c", "sh /localshare/setup.sh && php-fpm81 && chmod 777 /var/www/* && nginx -g 'daemon off;' && chown -R superuser:root /var/www"]
+CMD ["/bin/bash", "-c", "sh /localshare/setup.sh && php-fpm81 && chmod 777 /var/www/* && nginx -g 'daemon off;' && chown -R superuser:root /var/www && git config --system --add safe.directory '*'"]

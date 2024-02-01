@@ -4,8 +4,9 @@ COPY rootfs /
 
 # Set the working directory
 WORKDIR /var/www
-
+RUN adduser superuser -G root -D -H
 RUN apk update
+RUN apk add sudo
 
 RUN apk add git
 RUN cd /var/www/
@@ -40,4 +41,4 @@ RUN chmod +x /localshare/setup.sh
 EXPOSE 8080
 
 # Command to start the webserver
-CMD ["/bin/bash", "-c", "sh /localshare/setup.sh && php-fpm81 && chmod 777 /var/www/* && nginx -g 'daemon off;'"]
+CMD ["/bin/bash", "-c", "sh /localshare/setup.sh && php-fpm81 && chmod 777 /var/www/* && nginx -g 'daemon off;' && chown -R superuser:root /var/www"]
